@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 2px red solid; */
+    color: #21021D;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+    width: 100vw;
+}
+li{
+    list-style: none;
+}
+.main-header{
+    height: 100vh;
+    z-index: -1;
+}
+.head-navbar ul{
+    display: flex;
+    justify-content: flex-start;
+}
+.head-navbar li{
+    text-align: center;
+    cursor: pointer;
+    height: 20px;
+    width: 60px;
+}
+
+/* body, html{
+    overflow-x: hidden;
+} */
+
+.nav{
+    margin-top: 20px;
+    padding: 10px 25px;
+    margin-right: 5px;
+    color: #21021D;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.active{
+    background-color: #21021D;
+    color: aliceblue;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.head-navbar li::after{
+    content: "";
+    display: block;
+    width: 90px;
+    height: 35px;
+    position: relative;
+    border-radius: 10px;
+    transform: translateY(-50px);
+    bottom: 27px;
+    left: -10px;
+    background-color: #bb7f55;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: 0.5s ease-out;
+    z-index: -1;
+}
+.head-navbar li:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom right;
+}
+.head-navbar li:active{
+    background-color: #21021D;
+    border-radius: 15px;
+    color: antiquewhite;
+}
+.head-navbar::before{
+    background-color: black;
+    content: "";
+    background-image: url('main-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    width: 1280px;
+    position: absolute;
+    z-index: -10;
+    opacity: 1;
+    transition: opacity 0.3s ease-out; 
+    position: fixed;
+    overflow-y: hidden;
+}
+.header-body{
+    /* border: 2px red solid; */
+    margin-top: 50px;
+    height: 630px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.abc{
+    width: 50%;
+    height: 500px;
+    /* border: 2px red solid; */
+
+}
+.xyz{
+    visibility: hidden;
+}
+.abc h1{
+    padding-left: 90px;
+    margin-top: 100px;
+    transform: translateY(-50px);
+    font-size: 4rem;
+    font-family: 'Mountains of Christmas', cursive;
+    /* border: 2px red solid; */
+    font-family: 'Limelight', cursive;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.abc p{
+    font-family: 'Edu SA Beginner', cursive;
+    width: 500px;
+    margin: 0px 0px 0px 100px;
+    display: block;
+    padding: 0px 0px 50px 0px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.abc button{
+    padding: 12px 40px;
+    width: 160px;
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px #21021De0 solid;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #21021De0;
+    color: wheat;
+    font-weight: bold;
+    /* text-align: right; */
+    font-family: cursive;
+    font-size: 13px;
+    box-shadow: 2px 3px black;
+}
+.abc button:hover{
+    box-shadow: -2px -3px black;
+}
+.btns{
+    display: flex;
+    margin: auto ;
+    width: 320px;
+}
+.primary-header-body{
+    height: 880px;
+    width: 100vw;
+    background-color: #bcaa7a;
+}
+
+.logo-beer img{
+    display: block;
+    width: 300px;
+    margin: auto;
+}
+.logo-beer h1{
+    display: block;
+    width: 490px;
+    margin: auto;
+    padding-left: 90px;
+    padding-top: 120px;
+    font-family: 'Cinzel', serif;
+    font-weight: 100;
+    font-size: 3rem;
+}
+.logo-beer p{
+    display: block;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    font-family: cursive;
+    font-weight: 100;
+}
+.offers{
+    display: flex;
+    padding-top: 0px;
+    justify-content: space-between;
+}
+.offer img{
+    height: 100px;
+    display: block;
+    margin: auto;
+    padding-top: 40px;
+}
+.offer{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    margin-top: 90px;
+    text-align: center;
+    border-right: #21021D 2px solid;
+}
+.offer h1{
+    padding: 40px 40px 0px 40px;
+    font-family: 'Cinzel', serif;
+    font-weight: 100;
+    font-size: 25px;
+}
+.offer p{
+    font-family: cursive;
+    font-weight: 100;
+    font-size: 15px;
+    width: 250px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.mainbody{
+    transform: translateY(-50px);
+    height: 880px;
+    background-color: black;
+    display: flex;
+    margin: 0px 0px -50px 0px;
+}
+.wine{
+    width: 50%;
+}
+.wine-img img{
+    padding-top: 50px;
+    height: 800px;
+}
+.wine-info{
+    padding: 50px;
+    margin: 100px 0px;
+}
+.wine-info h1{
+    color: #ab0323;
+    padding-top: 50px;
+    font-family: 'Love Light', cursive;
+    font-size: 5.3rem;
+    line-height: 90px;
+}
+.wine-info h2{
+    color: #ab0323;
+    font-family: 'Love Light', cursive;
+    font-size: 4.5rem;
+    line-height: 90px;
+}
+.wine-info p{
+    padding: 50px 20px 0px 20px;
+    color: #D196a3;
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+.wine-info img{
+    height: 100px;
+    padding-left: 30px;
+}
+.secondary-body img{
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding-top: opx;
+    
+}
+.mainbody-secondary{
+    background-color: black;
+    height: 880px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.tequilla{
+    width: 50%;
+}
+.tequilla-img img{
+    padding-top: 50px;
+    height: 760px;
+    transform: translateX(50px);
+}
+.tequilla-info{
+    margin: 100px 0px;
+    padding: 0px 60px;
+    
+}
+.tequilla-info h1{
+    color: #475c47;
+    padding-top: 50px;
+    padding-left: 50px;
+    font-family: 'Love Light', cursive;
+    font-size: 4rem;
+    line-height: 90px;
+}
+.tequilla-info h2{
+    padding-left: 50px;
+    color: #475c47;
+    font-family: 'Love Light', cursive;
+    font-size: 3rem;
+    line-height: 90px;
+}
+.tequilla-info p{
+    padding: 50px 20px 0px 50px;
+    color: #bcaa7a;
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+.tequilla-info img{
+    height: 90px;
+    padding-left: 30px;
+}
+.primary-body{
+    height: 100vh;
+    background-color: #bcaa7a;
+    
+}
+
+.primary-body h1{
+    height: 100px;
+    background-color: #bcaa7a;
+    font-family: 'Moon Dance', cursive;
+    margin: auto;
+    display: block;
+    padding-top: 80px;
+    width: 500px;
+    text-align: center;
+    font-size: 3rem;
+
+}
+.gallery p{
+    font-family: 'Moon Dance', cursive;
+    font-family: 'Edu SA Beginner', cursive;
+    width: 500px;
+    margin: auto;
+    display: block;
+    transform: translateY(-35px);
+}
+.gallery img{
+    height: 60px;
+    display: block;
+    margin: auto;
+    transform: translateY(-25px);
+}
+.main-gallery{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    margin-top: 50px;
+}
+.main-gallery img{
+    height: 200px;
+    margin: 10px;
+}
+.secondary-body{
+    height: 400px;
+    overflow-y: auto;
+    margin-top: 0px;
+    background-color: #21021D;
+}
+.secondary-body::-webkit-scrollbar{
+    display: none;
+}
+.footer{
+    background-color: black;
+}
+.footer h1{
+    color: whitesmoke;
+    font-size: 3rem;
+    display: block;
+    margin: auto;
+    font-weight: 100;
+    width: 800px;
+    font-family: 'Moon Dance', cursive;
+    padding: 50px;
+}
+.footer-main{
+    height: 150px;
+    background-color: #bcaa7a;
+    padding-top: 50px;
+}
+
+.foot-navbar{
+    display: flex;
+}
+.foot-navbar img{
+    height: 30px;
+    padding: 10px;
+}
+.foot-navbar{
+    width: 268px;
+    margin: auto;
+    display: block;
+}
+.footer-foot{
+    width: 400px;
+    margin: auto;
+    display: block;
+    text-indent: 50px;
+}
